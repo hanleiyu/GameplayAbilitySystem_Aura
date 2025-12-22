@@ -36,11 +36,11 @@ void AAuraCharacter::OnRep_PlayerState()
 void AAuraCharacter::InitAbilityActorInfo()
 {
 	// Init ability actor info for server
-	AAuraPlayerState* PlayerState = GetPlayerState<AAuraPlayerState>();
-	check(PlayerState);
+	AAuraPlayerState* AuraPlayerState = GetPlayerState<AAuraPlayerState>();
+	check(AuraPlayerState);
 
-	AbilitySystemComponent = PlayerState->GetAbilitySystemComponent();
-	AttributeSet = PlayerState->GetAttributeSet();
+	AbilitySystemComponent = AuraPlayerState->GetAbilitySystemComponent();
+	AttributeSet = AuraPlayerState->GetAttributeSet();
 	
-	AbilitySystemComponent->InitAbilityActorInfo(PlayerState, this);
+	AbilitySystemComponent->InitAbilityActorInfo(AuraPlayerState, this);
 }
