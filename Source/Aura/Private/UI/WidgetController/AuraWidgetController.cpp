@@ -13,6 +13,7 @@ void UAuraWidgetController::SetWidgetControllerParams(const FWidgetControllerPar
 
 void UAuraWidgetController::BroadcastInitialValues()
 {
+	UE_LOG(LogTemp, Log, TEXT("BroadcastInitialValues"));
 }
 
 void UAuraWidgetController::BindCallBacksToDependencies()
